@@ -1,42 +1,36 @@
-import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.List;
+public class ConnectionPool{
 
-public class ConnectionPool implements IConnectionPool{
+    private String masterUrl="jdbc:mysql://localhost:3306/people";// link to masterDB
+    private String user="root";
+    private String password="root";
 
-    //    private final String url = "jdbc:mysql://localhost:3306/people";
-//    private final String user = "root";
-//    private final String password = "root";
-    private String url;
-    private String user;
-    private String password;
-    private List<Connection> connectionPool;
-    private List<Connection> usedConnections = new ArrayList<>();
-    private static int INITIAL_POOL_SIZE = 10;
+    private String secondUrl="jdbc:mysql://localhost:3306/people1";//link to reserveDB
 
-
-    @Override
-    public Connection getConnection() {
-        return null;
+    public String getMasterUrl() {
+        return masterUrl;
     }
 
-    @Override
-    public boolean releaseConnection(Connection connection) {
-        return false;
+    public void setMasterUrl(String masterUrl) {
+        this.masterUrl = masterUrl;
     }
 
-    @Override
-    public String getUrl() {
-        return null;
-    }
-
-    @Override
     public String getUser() {
-        return null;
+        return user;
     }
 
-    @Override
+    public void setUser(String masterUser) {
+        this.user = masterUser;
+    }
+
     public String getPassword() {
-        return null;
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getSecondUrl() {
+        return secondUrl;
     }
 }
