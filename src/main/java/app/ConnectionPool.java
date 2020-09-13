@@ -1,3 +1,5 @@
+package app;
+
 public class ConnectionPool{
 
     private String masterUrl="jdbc:mysql://localhost:3306/people";// link to masterDB
