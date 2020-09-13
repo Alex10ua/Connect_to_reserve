@@ -13,21 +13,24 @@ public class DataFromDB {
 
     public void getNameDataFromDB(Connection connection) {
         Statement statement = null;
-        try {
-            statement = connection.createStatement();
-            ResultSet resultSet= statement.executeQuery(sqlRequestGetPersonName);
-            getLog.info("Data of SQL request from DB are received successfully");
-            while (resultSet.next()) {
-                String name = resultSet.getString("person_name");
-                System.out.println(name + "\n");
-            }
-            resultSet.close();
-            statement.close();
-            connection.close();
-            getLog.info("Current connect is closed");
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-            getLog.error("Problem with sql", throwables);
+        if (connection!=null){
+            try {
+                statement = connection.createStatement();
+                ResultSet resultSet= statement.executeQuery(sqlRequestGetPersonName);// result from DB
+                getLog.info("Data of SQL request from DB are received successfully");
+                while (resultSet.next()) {                                          // parse an answer and sout
+                    String name = resultSet.getString("person_name");
+                    System.out.println(name + "\n");
+                }
+                resultSet.close();
+                statement.close();
+                getLog.info("Current connect is closed");
+            } catch (SQLException throwables) {
+                getLog.error("Problem with SQL", throwables);
+              }
+        }else {
+            getLog.error("All DB are not available");
+            System.out.println("All DB are not available");
+         }
         }
-    }
 }
