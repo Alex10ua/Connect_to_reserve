@@ -1,0 +1,297 @@
+2020-09-13 23:59:23 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-13 23:59:23 ERROR ConnectionManager:31 - Can't connect to master DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:22)
+	at Main.main(Main.java:24)
+2020-09-13 23:59:23 INFO  ConnectionManager:32 - Connecting to reserve DB...
+2020-09-13 23:59:23 INFO  ConnectionManager:38 - Connected to reserve DB
+2020-09-13 23:59:23 INFO  ConnectionManager:21 - Data of SQL request from DB are received successfully
+2020-09-13 23:59:23 INFO  ConnectionManager:29 - Current connect is closed
+2020-09-14 00:00:09 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 00:00:09 ERROR ConnectionManager:31 - Can't connect to master DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:22)
+	at Main.main(Main.java:23)
+2020-09-14 00:00:09 INFO  ConnectionManager:32 - Connecting to reserve DB...
+2020-09-14 00:00:09 INFO  ConnectionManager:38 - Connected to reserve DB
+2020-09-14 00:00:09 INFO  ConnectionManager:21 - Data of SQL request from DB are received successfully
+2020-09-14 00:00:09 INFO  ConnectionManager:29 - Current connect is closed
+2020-09-14 00:58:04 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 00:58:05 INFO  ConnectionManager:28 - Connected to master DB
+2020-09-14 00:58:05 INFO  ConnectionManager:19 - Data of SQL request from DB are received successfully
+2020-09-14 00:58:05 INFO  ConnectionManager:27 - Current connect is closed
+2020-09-14 01:05:04 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 01:05:05 INFO  ConnectionManager:28 - Connected to master DB
+2020-09-14 01:05:05 INFO  ConnectionManager:19 - Data of SQL request from DB are received successfully
+2020-09-14 01:05:05 INFO  ConnectionManager:27 - Current connect is closed
+2020-09-14 01:06:11 ERROR ConnectionManager:30 - Problem with sql
+java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:1094)
+	at com.mysql.cj.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:1084)
+	at app.DataFromDB.getNameDataFromDB(DataFromDB.java:17)
+	at Main.main(Main.java:23)
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:576)
+	at com.mysql.cj.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java)
+	... 3 more
+2020-09-14 01:07:07 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 01:07:08 INFO  ConnectionManager:28 - Connected to master DB
+2020-09-14 01:07:08 INFO  ConnectionManager:19 - Data of SQL request from DB are received successfully
+2020-09-14 01:07:08 INFO  ConnectionManager:27 - Current connect is closed
+2020-09-14 01:34:16 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 01:34:16 ERROR ConnectionManager:32 - Can't connect to master DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:22)
+	at Main.main(Main.java:22)
+2020-09-14 01:34:16 INFO  ConnectionManager:33 - Connecting to reserve DB...
+2020-09-14 01:34:16 ERROR ConnectionManager:43 - Can't connect to reserve DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl1'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:34)
+	at Main.main(Main.java:22)
+2020-09-14 01:34:16 ERROR ConnectionManager:45 - All DB are not available
+2020-09-14 01:35:19 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 01:35:19 ERROR ConnectionManager:32 - Can't connect to master DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:22)
+	at Main.main(Main.java:22)
+2020-09-14 01:35:19 INFO  ConnectionManager:33 - Connecting to reserve DB...
+2020-09-14 01:35:19 ERROR ConnectionManager:43 - Can't connect to reserve DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl1'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:34)
+	at Main.main(Main.java:22)
+2020-09-14 01:36:20 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 01:36:21 ERROR ConnectionManager:31 - Can't connect to master DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:22)
+	at Main.main(Main.java:22)
+2020-09-14 01:36:21 INFO  ConnectionManager:34 - Connecting to reserve DB...
+2020-09-14 01:36:21 ERROR ConnectionManager:44 - Can't connect to reserve DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl1'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:35)
+	at Main.main(Main.java:22)
+2020-09-14 01:42:23 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 01:42:24 ERROR ConnectionManager:31 - Can't connect to master DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:22)
+	at Main.main(Main.java:22)
+2020-09-14 01:42:24 INFO  ConnectionManager:34 - Connecting to reserve DB...
+2020-09-14 01:42:24 ERROR ConnectionManager:44 - Can't connect to reserve DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl1'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:35)
+	at Main.main(Main.java:22)
+2020-09-14 01:42:45 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 01:42:45 ERROR ConnectionManager:31 - Can't connect to master DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:22)
+	at Main.main(Main.java:22)
+2020-09-14 01:42:45 INFO  ConnectionManager:34 - Connecting to reserve DB...
+2020-09-14 01:42:45 ERROR ConnectionManager:45 - Can't connect to reserve DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl1'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:35)
+	at Main.main(Main.java:22)
+2020-09-14 01:49:11 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 01:49:11 ERROR ConnectionManager:31 - Can't connect to master DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:22)
+	at Main.main(Main.java:22)
+2020-09-14 01:49:11 INFO  ConnectionManager:34 - Connecting to reserve DB...
+2020-09-14 01:49:11 ERROR ConnectionManager:45 - Can't connect to reserve DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl1'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:35)
+	at Main.main(Main.java:22)
+2020-09-14 01:49:11 ERROR ConnectionManager:32 - All DB are not available
+2020-09-14 01:49:33 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 01:49:34 ERROR ConnectionManager:31 - Can't connect to master DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:22)
+	at Main.main(Main.java:22)
+2020-09-14 01:49:34 INFO  ConnectionManager:34 - Connecting to reserve DB...
+2020-09-14 01:49:34 ERROR ConnectionManager:45 - Can't connect to reserve DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl1'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:35)
+	at Main.main(Main.java:22)
+2020-09-14 01:49:34 ERROR ConnectionManager:32 - All DB are not available
+2020-09-14 01:49:51 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 01:49:52 INFO  ConnectionManager:28 - Connected to master DB
+2020-09-14 01:49:52 INFO  ConnectionManager:20 - Data of SQL request from DB are received successfully
+2020-09-14 01:49:52 INFO  ConnectionManager:27 - Current connect is closed
+2020-09-14 01:50:00 DEBUG ConnectionManager:21 - Connecting to master DB...
+2020-09-14 01:50:01 ERROR ConnectionManager:31 - Can't connect to master DB
+java.sql.SQLSyntaxErrorException: Unknown database 'peopl'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at app.ConnectionManager.connectToDB(ConnectionManager.java:22)
+	at Main.main(Main.java:22)
+2020-09-14 01:50:01 INFO  ConnectionManager:34 - Connecting to reserve DB...
+2020-09-14 01:50:01 INFO  ConnectionManager:41 - Connected to reserve DB
+2020-09-14 01:50:01 INFO  ConnectionManager:20 - Data of SQL request from DB are received successfully
+2020-09-14 01:50:01 INFO  ConnectionManager:27 - Current connect is closed
+2020-09-14 02:29:03 DEBUG ConnectionManager:18 - Connecting to master DB...
+2020-09-14 02:29:03 INFO  ConnectionManager:25 - Connected to master DB
+2020-09-14 02:29:03 INFO  DataFromDB:20 - Data of SQL request from DB are received successfully
+2020-09-14 02:29:03 INFO  DataFromDB:27 - Current connect is closed
