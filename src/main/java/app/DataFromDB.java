@@ -24,6 +24,7 @@ public class DataFromDB {
                 }
                 resultSet.close();
                 statement.close();
+                connection.close();
                 getLog.info("Current connect is closed");
             } catch (SQLException throwables) {
                 getLog.error("Problem with SQL", throwables);
