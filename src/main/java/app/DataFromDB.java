@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 
 public class DataFromDB {
 
-    private static final Logger getLog= Logger.getLogger(ConnectionManager.class);
+    private static final Logger getLog= Logger.getLogger(DataFromDB.class);
     private String sqlRequestGetPersonName="SELECT * FROM person";
 
     public void getNameDataFromDB(Connection connection) {
